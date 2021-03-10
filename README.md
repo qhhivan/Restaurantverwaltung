@@ -1,2 +1,0 @@
-# Restaurantverwaltung
-Restaurantverwaltung - INSY Projekt

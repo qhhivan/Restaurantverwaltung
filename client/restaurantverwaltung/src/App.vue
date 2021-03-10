@@ -1,28 +1,32 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="container">
+    
+    <SelectLocation v-bind:location="Location[0]" />
+    <SelectLocation v-bind:location="Location[2]" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SelectLocation from './components/SelectLocation.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    SelectLocation,
+  },
+  data() {
+    return {
+      // Location: [
+      //   { name: 'Garten', img: '@/assets/selectLocation/def.jpg' },
+      //   {
+      //     name: 'Wintergarten',
+      //     img: '../assets/selectLocation/innen_home.jpg',
+      //   },
+      //   { name: 'Innen', img: '../assets/selectLocation/def.jpg' },
+      // ],
+    };
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>

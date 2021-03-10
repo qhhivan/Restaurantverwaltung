@@ -1,0 +1,30 @@
+{
+  "name": "restaurantverwaltung",
+  "version": "1.0.0",
+  "description": "INSY Projekt",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qhhivan/Restaurantverwaltung.git"
+  },
+  "author": "IO",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "helmet": "^4.3.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "bugs": {
+    "url": "https://github.com/qhhivan/Restaurantverwaltung/issues"
+  },
+  "homepage": "https://github.com/qhhivan/Restaurantverwaltung#readme"
+}
